@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="E-терапевт"
+        android:textColor="#ff0000"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Введите Ваше имя"
+        android:textColor="#0000ff"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <Switch
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Есть ли у Вас повышеная температура?"
+        android:textColor="#0000ff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <CheckBox
+        android:id="@+id/menshe38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:text="до 38"
+        android:visibility="invisible"
+        />
+
+    <CheckBox
+        android:id="@+id/bolshe38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:text="выше 38"
+        android:textColor="#ff0000"
+        android:visibility="invisible" />
+
+    <Switch
+        android:id="@+id/obonanie2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Отсутсвует обоняние?"
+        android:textColor="#0000ff" />
+
+    <Switch
+        android:id="@+id/lomota3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Присутствует ли ломота в суставах?"
+        android:textColor="#0000ff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <Switch
+        android:id="@+id/brainstorm4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Головокружение и отдышка?"
+        android:textColor="#0000ff"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/analize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Анализировать"
+        />
+    <TextView
+        android:id="@+id/zakluchenie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Заключение:"
+        android:textColor="#0000ff"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/diagnoz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/button911"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Вызов 911(RESET)"
+        android:background="@android:color/holo_red_light"
+        android:visibility="invisible" />
+
+
+
+</LinearLayout>
+
